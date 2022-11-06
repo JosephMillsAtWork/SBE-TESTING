@@ -1,0 +1,19 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:enchanted_book"},
+        "title": {"translate":"Magical Trade"},
+        "description": {"translate":"Trade for an Enchanted Book"}
+    },
+    "parent": "skyblockevolution:skyblock/map_trade",
+    "criteria":
+    {
+        "trade":
+        {
+            "trigger": "minecraft:villager_trade",
+	        "conditions": {"item": {"items": ["minecraft:enchanted_book"]}}
+	    }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

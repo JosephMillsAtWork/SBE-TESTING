@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:emerald_block"},
+        "title": {"translate": "Trade Master"},
+        "description": {"translate": "Get a stack of Emerald Blocks!"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:skyblock/magical_trade",
+    "criteria":
+    {
+        "emerald":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:emerald_block"], "count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

@@ -1,0 +1,22 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:player_head",
+		"nbt": "{SkullOwner:\"RichardThornton\"}"},
+        "title": {"translate": "SBE Advancement Unlock Reward"},
+        "description": {"translate": "Congratulations for unlocking your entire inventory!"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+    },
+    "parent": "skyblockevolution:ocean/founders_faces",
+    "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "skyblock:sbeaur/reward"
+  }
+}

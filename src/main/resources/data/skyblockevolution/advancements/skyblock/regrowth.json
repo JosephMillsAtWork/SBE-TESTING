@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_sapling"
+		},
+		"title": {
+			"translate": "Regrowth"
+		},
+		"description": {
+			"translate": "Collect a sapling or it's game over man!"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:skyblock/root",
+	"criteria": {
+		"sapling": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:oak_sapling"]
+				}]
+			}
+		}
+	},
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

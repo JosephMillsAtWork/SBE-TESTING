@@ -1,0 +1,70 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_chestplate"
+		},
+		"title": {
+			"translate": "Cover Me With Diamonds"
+		},
+		"description": {
+			"translate": "Diamond armor saves lives."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:end/diamond",
+	"criteria": {
+    "diamond_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

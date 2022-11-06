@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:creeper_head"
+		},
+		"title": {
+			"translate": "Head Hunter"
+		},
+		"description": {
+			"translate": "Obtain every head in the game."
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:ocean/lightning_creeper",
+	"criteria": {
+		"mob_skulls": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:wither_skeleton_skull"]
+				}, {
+					"items": ["minecraft:creeper_head"]
+				}, {
+					"items": ["minecraft:zombie_head"]
+				}, {
+					"items": ["minecraft:dragon_head"]
+				}, {
+					"items": ["minecraft:skeleton_skull"]
+				}]
+			}
+		}
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [
+		[
+			"mob_skulls"
+		]
+	]
+}

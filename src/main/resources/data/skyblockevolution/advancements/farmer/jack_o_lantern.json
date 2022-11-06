@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:jack_o_lantern"},
+        "title": {"translate": "Halloween!"},
+        "description": {"translate": "Carve and craft 64 Jack o'Lanterns."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:farmer/pumpkin",
+    "criteria":
+    {
+        "jack_o_lantern":
+        {
+	    "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:jack_o_lantern"],"count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

@@ -1,0 +1,168 @@
+{
+	"parent": "skyblockevolution:skyblock/slime_ball",
+	"display": {
+		"icon": {
+			"item": "minecraft:lectern"
+		},
+		"title": {
+			"translate": "For Science!!!"
+		},
+		"description": {
+			"translate": "Wha..What's this do? It's an inverted dual observer infinite loop generator with toggle capacity and burn out protection. It's designed to capitalize on both zero tick approach and also eliminate lag. Woah! You're a scientist?!? You found a use for every redstone item!"
+		},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+	},
+  "criteria": {
+    "dust": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:redstone_wire"
+      }
+    },
+	"torch": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:redstone_torch"
+      }
+    },
+	"repeater": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:repeater"
+      }
+    },
+	"comparator": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:comparator"
+      }
+    },
+	"observer": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:observer"
+      }
+    },
+	"dropper": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:dropper"
+      }
+    },
+	"dispenser": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:dispenser"
+      }
+    },
+	"piston": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:piston"
+      }
+    },
+	"sticky_piston": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:sticky_piston"
+      }
+    },
+	"redstone_block": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:redstone_block"
+      }
+    },
+	"hopper": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:hopper"
+      }
+    },
+	"redstone_lamp": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:redstone_lamp"
+      }
+    },
+	"lever": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:lever"
+      }
+    },
+	"tripwire_hook": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:tripwire_hook"
+      }
+    },
+	"stone_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:stone_button"
+      }
+    },
+	"oak_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:oak_button"
+      }
+    },
+	"spruce_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:spruce_button"
+      }
+    },
+	"birch_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:birch_button"
+      }
+    },
+	"jungle_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:jungle_button"
+      }
+    },
+	"acacia_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:acacia_button"
+      }
+    },
+	"dark_oak_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:dark_oak_button"
+      }
+    },
+	"crimson_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:crimson_button"
+      }
+    },
+	"warped_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:warped_button"
+      }
+    },
+	"polished_blackstone_button": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:polished_blackstone_button"
+      }
+    }
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements":[["dust"],["torch"],["repeater"],["comparator"],["observer"],["piston"],["sticky_piston"],["redstone_block"],["hopper"],["redstone_lamp"],["lever"],["tripwire_hook"],["dropper"],["dispenser"],["stone_button","oak_button","spruce_button","birch_button","jungle_button","acacia_button","dark_oak_button","crimson_button","warped_button","polished_blackstone_button"]]
+}

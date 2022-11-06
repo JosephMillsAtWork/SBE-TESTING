@@ -1,0 +1,46 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:leather_chestplate"
+		},
+		"title": {
+			"translate": "Suit Up"
+		},
+		"description": {
+			"translate": "Make a full set of leather armor."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:farmer/animal_friends",
+	"criteria": {
+		"leather_armor": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:leather_helmet"],
+					"count": 1
+				}, {
+					"items": ["minecraft:leather_chestplate"],
+					"count": 1
+				}, {
+					"items": ["minecraft:leather_leggings"],
+					"count": 1
+				}, {
+					"items": ["minecraft:leather_boots"],
+					"count": 1
+				}]
+			}
+		}
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [
+		[
+			"leather_armor"
+		]
+	]
+}

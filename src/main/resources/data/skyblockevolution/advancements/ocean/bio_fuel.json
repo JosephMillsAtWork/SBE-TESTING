@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:dried_kelp_block"},
+        "title": {"translate": "Bio Fuel"},
+        "description": {"translate": "Make 64 Dried Kelp Blocks."},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:ocean/kelp",
+    "criteria":
+    {
+        "dried_kelp_blocks":
+        {
+	    "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:dried_kelp_block"],"count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

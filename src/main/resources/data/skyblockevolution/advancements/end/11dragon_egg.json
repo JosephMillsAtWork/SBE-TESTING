@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:dragon_egg"},
+        "title": {"translate": "The Next Generation"},
+        "description": {"translate": "Hold the Dragon Egg."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:end/2kill_dragon",
+    "criteria":
+    {
+        "dragon_egg":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {"items": [{"items": ["minecraft:dragon_egg"]}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

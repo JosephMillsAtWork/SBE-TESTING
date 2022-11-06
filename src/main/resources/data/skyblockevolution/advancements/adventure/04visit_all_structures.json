@@ -1,0 +1,181 @@
+{
+  "parent": "skyblockevolution:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:cartography_table"
+    },
+    "title": {
+      "translate": "Tourist Trap"
+    },
+    "description": {
+      "translate": "Visit all types of structures."
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+        "bastion_remnant": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "bastion_remnant"
+                }
+              }
+            ]
+          }
+        },
+		"desert_pyramid": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "desert_pyramid"
+                }
+              }
+            ]
+          }
+        },
+		"end_city": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "end_city"
+                }
+              }
+            ]
+          }
+        },
+		"fortress": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "fortress"
+                }
+              }
+            ]
+          }
+        },
+		"jungle_pyramid": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "jungle_pyramid"
+                }
+              }
+            ]
+          }
+        },
+		"mansion": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "mansion"
+                }
+              }
+            ]
+          }
+        },
+		"monument": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "monument"
+                }
+              }
+            ]
+          }
+        },
+		"pillager_outpost": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "pillager_outpost"
+                }
+              }
+            ]
+          }
+        },
+		"ruined_portal_nether": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "ruined_portal_nether"
+                }
+              }
+            ]
+          }
+        },
+		"shipwreck": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "shipwreck"
+                }
+              }
+            ]
+          }
+        },
+		"swamp_hut": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "swamp_hut"
+                }
+              }
+            ]
+          }
+        },
+		"ancient_city": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "ancient_city"
+                }
+              }
+            ]
+          }
+        }
+      },
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [["mansion"],["monument"],["pillager_outpost"],["shipwreck"],["swamp_hut"],["desert_pyramid"],["jungle_pyramid"],["ancient_city"],["bastion_remnant"],["fortress"],["ruined_portal_nether"],["end_city"]]
+	
+}

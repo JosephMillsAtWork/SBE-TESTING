@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S#",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:copper_ingot"
+        },
+        "S": {
+            "item": "minecraft:cobbled_deepslate"
+        }
+    },
+    "result": {
+        "item": "minecraft:deepslate_copper_ore",
+        "count": 1
+    }
+}

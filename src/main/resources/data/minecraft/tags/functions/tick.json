@@ -1,0 +1,7 @@
+{
+    "values":
+    [
+        "skyblockevolution:skyblock/main/tick",
+        "skyblockevolution:iu/tick"
+    ]
+}

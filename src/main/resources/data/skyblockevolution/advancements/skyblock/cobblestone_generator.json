@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:cobblestone"},
+        "title": {"translate": "Cobblestone Generator"},
+        "description": {"translate": "Make a cobblestone generator with water and lava."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false},
+        "parent": "skyblockevolution:skyblock/root",
+        "criteria":
+        {
+            "cobblestone":
+            {
+                "trigger": "minecraft:inventory_changed",
+                "conditions" : {"items": [{"items": ["minecraft:cobblestone"]}]}
+            }
+        },
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+    }
+}

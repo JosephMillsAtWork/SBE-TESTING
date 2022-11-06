@@ -1,0 +1,24 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:furnace"},
+        "title": {"translate": "Hot Topic"},
+        "description": {"translate": "Craft a furnace."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:skyblock/cobblestone_generator",
+    "criteria":
+    {
+        "furnace":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:furnace"]}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}
+

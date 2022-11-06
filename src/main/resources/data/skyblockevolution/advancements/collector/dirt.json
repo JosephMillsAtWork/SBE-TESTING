@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:dirt"},
+        "title": {"translate": "Dirt Collector"},
+        "description": {"translate": "Hoe coarse dirt to obtain a stack of dirt."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:collector/gravel",
+    "criteria":
+    {
+        "dirt":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:dirt"],"count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

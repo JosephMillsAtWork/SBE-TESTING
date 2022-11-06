@@ -1,29 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "skyblockevolution",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Skyblock Evolution 3.0",
+  "description": "Skyblock Evolution 3.0 Port as a mod.",
   "authors": [
-    "Me!"
+    "m_jimmer",
+    "Dracconis"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://skyblockevolution.com/",
+    "sources": "https://github.com/JosephMillsAtWork/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "license": "MIT",
+  "icon": "assets/skyblockevolution/icon.png",
+  "accessWidener": "skyblockevolution.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.skyblockevolution.SBE"
+    ],
+    "fabric-datagen": [
+      "com.skyblockevolution._build.SBEDataGenerator"
+    ],
+    "modmenu": [
+      "com.skyblockevolution.config.SBEModMenu"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "skyblockevolution.mixins.json"
   ],
 
   "depends": {

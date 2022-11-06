@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:end_stone"},
+        "title": {"translate": "The End?"},
+        "description": {"translate": "Enter the end portal in the fortress."},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true
+		
+    },
+    "parent": "skyblockevolution:nether/ride_strider_in_overworld_lava",
+	"rewards": { "function": "skyblock:end/end_teleport"},
+    "criteria": {
+    "entered_end": {
+      "conditions": {
+        "to": "minecraft:the_end"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  }
+}

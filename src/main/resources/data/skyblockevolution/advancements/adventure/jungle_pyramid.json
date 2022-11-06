@@ -1,0 +1,30 @@
+{
+    "display":
+    {
+        "icon": {
+			"item": "minecraft:player_head",
+			"nbt":"{SkullOwner:{Id:[I;618777352,1069631542,-1936139412,1506659229],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY2Y2Q5YzRhNWRhYzRhYTcyN2YxNzdiMTRiMDQyMDFhODJhNGNjOGE0MTE0ZmIwY2U4MDY1MmI5YTM3YThmIn19fQ==\"}]}}}"
+		},
+        "title": {"translate":"The Curse of Montezuma"},
+        "description": {"translate":"Can you break the Curse?"}
+    },
+    "parent": "skyblockevolution:adventure/desert_pyramid",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "minecraft:jungle_pyramid"
+                }
+              }
+            ]
+          }
+        }
+      },
+	"rewards": {
+		"function": "skyblock:jungle_pyramid/jungle_pyramid"
+	}
+}

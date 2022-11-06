@@ -1,0 +1,41 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:redstone"
+		},
+		"title": {
+			"translate": "Witch Power"
+		},
+		"description": {
+			"translate": "Get redstone dust by killing a witch."
+		},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+	},
+	"parent": "skyblockevolution:skyblock/02fake_cave",
+	"criteria": {
+		"witch": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions":{
+			"entity": {
+				"type": "witch"
+						}
+				}
+		},
+		"redstone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:redstone"],
+					"count": 1
+				}]
+			}
+		}
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [["witch"],["redstone"]]
+}

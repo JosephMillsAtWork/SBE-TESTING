@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "skyblockevolution:iu/load",
+    "skyblockevolution:skyblock/main/install",
+	"skyblockevolution:initialize"
+  ]
+}

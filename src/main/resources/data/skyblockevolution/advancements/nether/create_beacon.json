@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:beacon"},
+        "title": {"translate": "Beacon"},
+        "description": {"translate": "Create a beacon!"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:nether/kill_wither",
+    "criteria":
+    {
+        "beacon":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:beacon"]}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

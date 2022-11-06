@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:painting"
+		},
+		"title": {
+			"translate": "Interior Decorator"
+		},
+		"description": {
+			"translate": "Make 16 torches, bookshelves, and paintings."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:collector/dlog",
+	"criteria": {
+		"interior": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:torch"],
+					"count": 16
+				}, {
+					"items": ["minecraft:bookshelf"],
+					"count": 16
+				}, {
+					"items": ["minecraft:painting"],
+					"count": 16
+				}]
+			}
+		}
+
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [
+		[
+			"interior"
+		]
+	]
+}

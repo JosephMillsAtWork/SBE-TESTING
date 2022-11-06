@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:ender_pearl"},
+        "title": {"translate": "Pearl Collector"},
+        "description": {"translate": "Get 16 ender pearls."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:collector/stonebrick",
+    "criteria":
+    {
+        "ender_pearl":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:ender_pearl"],"count": 16}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

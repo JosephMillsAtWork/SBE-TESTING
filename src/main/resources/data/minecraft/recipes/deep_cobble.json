@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "S#",
+        "#S"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cobblestone"
+        },
+        "S": {
+            "item": "minecraft:granite"
+        }
+    },
+    "result": {
+        "item": "minecraft:cobbled_deepslate",
+        "count": 4
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:dark_oak_door"},
+        "title": {"translate":"The Mansion"},
+        "description": {"translate":"Find the Woodland Mansion within the world border."}
+    },
+    "parent": "skyblockevolution:adventure/04visit_all_structures",
+   "criteria": {
+        "requirement": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "structure": "minecraft:mansion"
+                }
+              }
+            ]
+          }
+        }
+      },
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+}
+}

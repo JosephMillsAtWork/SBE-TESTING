@@ -1,0 +1,25 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:filled_map"},
+        "title": {"translate":"Mansions and Monuments"},
+        "description": {"translate":"Get a Treasure Map from a village."}
+    },
+    "parent": "skyblockevolution:skyblock/the_cure",
+    "criteria":
+    {
+        "trade":
+        {
+            "trigger": "minecraft:villager_trade",
+	    "conditions": {"item": {"items": ["minecraft:filled_map"]}}
+	}
+    },
+  "requirements": [
+    [
+      "trade"
+    ]
+  ],
+	"rewards": {
+		"function": "skyblock:tabs/open_ocean"
+	}
+}

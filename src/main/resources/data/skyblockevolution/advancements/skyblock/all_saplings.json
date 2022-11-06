@@ -1,0 +1,48 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_sapling"
+		},
+		"title": {
+			"translate": "All Saplings"
+		},
+		"description": {
+			"translate": "Collect every type of sapling."
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:skyblock/regrowth",
+	"criteria": {
+		"allsap": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:oak_sapling"]
+				}, {
+					"items": ["minecraft:spruce_sapling"]
+				}, {
+					"items": ["minecraft:birch_sapling"]
+				}, {
+					"items": ["minecraft:jungle_sapling"]
+				}, {
+					"items": ["minecraft:acacia_sapling"]
+				}, {
+					"items": ["minecraft:dark_oak_sapling"]
+				}, {
+					"items": ["minecraft:mangrove_propagule"]
+				}]
+			}
+		}
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [
+		[
+			"allsap"
+		]
+	]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "RCR",
+        " S "
+    ],
+    "key": {
+        "R": {
+            "item": "minecraft:red_sand"
+        },
+        "C": {
+            "item": "minecraft:cobweb"
+        },
+        "S": {
+            "item": "minecraft:sand"
+        }
+    },
+    "result": {
+        "item": "minecraft:pointed_dripstone",
+        "count": 1
+    }
+}

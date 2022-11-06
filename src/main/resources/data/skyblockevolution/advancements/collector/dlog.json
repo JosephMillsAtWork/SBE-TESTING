@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_log"
+		},
+		"title": {
+			"translate": "Log Collector"
+		},
+		"description": {
+			"translate": "Obtain 64 logs of every type."
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "skyblockevolution:collector/root",
+	"criteria": {
+		"logs": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [{
+					"items": ["minecraft:oak_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:spruce_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:birch_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:jungle_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:acacia_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:dark_oak_log"],
+					"count": 64
+				}, {
+					"items": ["minecraft:mangrove_log"],
+					"count": 64
+				}]
+			}
+		}
+	},
+  "rewards": {
+  "function": "skyblockevolution:give_point"
+  },
+	"requirements": [
+		[
+			"logs"
+		]
+	]
+}

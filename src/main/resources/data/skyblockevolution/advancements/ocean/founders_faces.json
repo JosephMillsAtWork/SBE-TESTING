@@ -1,0 +1,29 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:player_head"},
+        "title": {"translate": "Founder's Faces!"},
+        "description": {"translate": "Collect the player heads of the 4 pioneers of this Skyblock Evolution map by killing mobs."},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:ocean/head_hunter",
+    "criteria":
+    {
+        "heads":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {"items": [{"items": ["minecraft:player_head"],"nbt": "{SkullOwner:ImpulseSV}"},{"items": ["minecraft:player_head"],"nbt": "{SkullOwner:Skizzleman}"},{"items": ["minecraft:player_head"],"nbt": "{SkullOwner:Dracconis69}"},{"items": ["minecraft:player_head"],"nbt": "{SkullOwner:DrTrog}"}]}
+        }
+    },
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+  "requirements": [
+    [
+      "heads"
+    ]
+  ]
+}

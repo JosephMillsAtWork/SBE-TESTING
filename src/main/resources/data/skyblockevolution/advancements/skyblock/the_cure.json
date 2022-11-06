@@ -1,0 +1,20 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:golden_apple"},
+        "title": {"translate": "The Cure"},
+        "description": {"translate": "Use a weakness potion and a golden apple to cure a zombie villager."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+	},
+    "parent": "skyblockevolution:skyblock/09portal",
+    "criteria":
+    {
+        "cured_zombie": {"trigger": "minecraft:cured_zombie_villager"}
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}
+

@@ -1,0 +1,54 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:diamond_sword"},
+        "title": {"translate": "The Ultimate Weapon"},
+        "description": {"translate": "Make a diamond sword with max level enchantments."},
+        "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:end/enchant_item",
+    "criteria":
+    {
+        "sword1":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" :
+            {
+                "items": [{"item": "minecraft:diamond_sword",
+                           "enchantments": [
+                            {"enchantment": "sharpness","levels": 5},
+                            {"enchantment": "looting","levels": 3},
+                            {"enchantment": "unbreaking","levels": 3},
+                            {"enchantment": "sweeping","levels": 3},
+                            {"enchantment": "fire_aspect","levels": 2},
+                            {"enchantment": "knockback","levels": 2},
+                            {"enchantment": "mending"}]
+			  }]
+            }
+	},
+		"sword2":
+        {
+            "trigger": "minecraft:inventory_changed",
+            "conditions" :
+            {
+                "items": [{"item": "minecraft:diamond_sword",
+                           "enchantments": [
+                            {"enchantment": "smite","levels": 5},
+                            {"enchantment": "looting","levels": 3},
+                            {"enchantment": "unbreaking","levels": 3},
+                            {"enchantment": "sweeping","levels": 3},
+                            {"enchantment": "fire_aspect","levels": 2},
+                            {"enchantment": "knockback","levels": 2},
+                            {"enchantment": "mending"}]
+			  }]
+            }
+	}
+	},
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+	"requirements": [["sword1","sword2"]]
+}

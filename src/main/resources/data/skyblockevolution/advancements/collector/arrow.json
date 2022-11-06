@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:arrow"},
+        "title": {"translate": "Arrows Collector"},
+        "description": {"translate": "Collect 1 stack of arrows."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:collector/gravel",
+    "criteria":
+    {
+        "arrow":
+        {
+	    "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:arrow"],"count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

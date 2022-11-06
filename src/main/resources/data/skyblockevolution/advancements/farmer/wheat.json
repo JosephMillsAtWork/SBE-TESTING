@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:wheat"},
+        "title": {"translate": "Wheat Farmer"},
+        "description": {"translate": "Grow a stack of wheat to craft bread or breed animals."},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:farmer/seedy_place",
+    "criteria":
+    {
+        "wheat":
+        {
+	    "trigger": "minecraft:inventory_changed",
+            "conditions" : {"items": [{"items": ["minecraft:wheat"],"count": 64}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

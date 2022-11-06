@@ -1,0 +1,23 @@
+{
+    "display":
+    {
+        "icon": {"item": "minecraft:dragon_breath"},
+        "title": {"translate": "You Need a Mint"},
+        "description": {"translate": "Collect dragon's breath in a glass bottle."},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+    },
+    "parent": "skyblockevolution:end/2kill_dragon",
+    "criteria":
+    {
+        "dragon_breath":
+	{
+	    "trigger": "minecraft:inventory_changed",
+            "conditions": {"items": [{"items": ["minecraft:dragon_breath"]}]}
+        }
+    },
+  "rewards": {
+  "function": "skyblockevolution:give_point"}
+}

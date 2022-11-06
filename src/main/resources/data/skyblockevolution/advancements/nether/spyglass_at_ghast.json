@@ -1,0 +1,52 @@
+{
+  "parent": "skyblockevolution:nether/netherite_armor",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {
+      "translate": "advancements.adventure.spyglass_at_ghast.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.spyglass_at_ghast.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {	
+    "spyglass_at_ghast": {	
+      "conditions": {	
+        "item": {	
+          "items": [	
+            "minecraft:spyglass"	
+          ]	
+        },	
+        "player": [	
+          {	
+            "condition": "minecraft:entity_properties",	
+            "entity": "this",	
+            "predicate": {	
+              "type_specific": {	
+                "type": "player",	
+                "looking_at": {	
+                  "type": "minecraft:ghast"	
+                }	
+              }	
+            }	
+          }	
+        ]	
+      },	
+      "trigger": "minecraft:using_item"	
+    }	
+  },
+  "rewards": {
+    "function": "skyblockevolution:give_point"
+  },
+  "requirements": [
+    [
+      "spyglass_at_ghast"
+    ]
+  ]
+}
